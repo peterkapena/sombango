@@ -1,15 +1,1 @@
-{
-  "kind": "identitytoolkit#DownloadAccountResponse",
-  "users": [
-    {
-      "localId": "gLqbhZjH4pbFbV20u9z0wXqF8zg1",
-      "email": "peterkapenapeter@gmail.com",
-      "emailVerified": false,
-      "passwordHash": "FInZvKBMK+5eS7AVzFeWKE+fa0mSSBdogzv1/ka97eLbEv0ji27I9vgf613lEhXY16h9ZvC1wPvJzwd/usLPvQ==",
-      "salt": "VFKsScfBZQQ+KQ==",
-      "createdAt": "1641843727508",
-      "disabled": false,
-      "providerUserInfo": []
-    }
-  ]
-}
+{"kind":"identitytoolkit#DownloadAccountResponse","users":[{"localId":"gLqbhZjH4pbFbV20u9z0wXqF8zg1","createdAt":"1641843727508","passwordHash":"FInZvKBMK+5eS7AVzFeWKE+fa0mSSBdogzv1/ka97eLbEv0ji27I9vgf613lEhXY16h9ZvC1wPvJzwd/usLPvQ==","salt":"VFKsScfBZQQ+KQ==","passwordUpdatedAt":1641891684244,"providerUserInfo":[{"providerId":"password","email":"peterkapenapeter@gmail.com","federatedId":"peterkapenapeter@gmail.com","rawId":"peterkapenapeter@gmail.com"}],"validSince":"1641891684","email":"peterkapenapeter@gmail.com","emailVerified":false,"disabled":false}]}
