@@ -28,6 +28,7 @@ module.exports = {
     "linebreak-style": 0,
     "require-jsdoc": 0,
     "indent": 0,
-    "object-curly-spacing": "never",
+    "object-curly-spacing": 0,
+    "max-len": ["error", { "code": 1000 }],
   },
 };

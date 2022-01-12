@@ -1,5 +1,5 @@
 import * as functions from "firebase-functions";
-import * as admin from "firebase-admin"
+import * as admin from "firebase-admin";
 import User from "./user";
 
 admin.initializeApp();
@@ -10,8 +10,8 @@ export const helloWorld = functions.https.onRequest((request, response) => {
   response.send("Hello from Sombango!");
 });
 
-/////////////////////////////////////                 USER               ////////////////////
-export const user_register = functions.https.onCall((data) =>
+//  User
+export const userRegister = functions.https.onCall((data) =>
   new User(
     data.email,
     data.phoneNumber,
