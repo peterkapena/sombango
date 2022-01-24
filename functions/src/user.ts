@@ -1,5 +1,4 @@
 import * as admin from "firebase-admin";
-import * as _const from "./const";
 
 export default class User {
   email: string;
@@ -22,7 +21,7 @@ export default class User {
     this.lastName = lastName;
   }
 
-  async register() {
+  async register(): Promise<unknown> {
     try {
       const _usrRecord = await admin.auth().createUser({
         email: this.email,
@@ -47,9 +46,10 @@ export default class User {
       // };
 
       // admin.firestore().collection(_const.USER).add(user);
+      return Promise.resolve(this);
     } catch (error) {
       console.error(error);
-      return error;
+      return Promise.resolve(error);
     }
   }
 }

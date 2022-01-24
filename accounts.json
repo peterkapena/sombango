@@ -1,14 +1,11 @@
+{"users": [
 {
-  "users": [
-    {
-      "localId": "gLqbhZjH4pbFbV20u9z0wXqF8zg1",
-      "email": "peterkapenapeter@gmail.com",
-      "emailVerified": false,
-      "passwordHash": "FInZvKBMK+5eS7AVzFeWKE+fa0mSSBdogzv1/ka97eLbEv0ji27I9vgf613lEhXY16h9ZvC1wPvJzwd/usLPvQ==",
-      "salt": "VFKsScfBZQQ+KQ==",
-      "createdAt": "1641843727508",
-      "disabled": false,
-      "providerUserInfo": []
-    }
-  ]
-}
+  "localId": "gLqbhZjH4pbFbV20u9z0wXqF8zg1",
+  "email": "peterkapenapeter@gmail.com",
+  "emailVerified": false,
+  "passwordHash": "FInZvKBMK+5eS7AVzFeWKE+fa0mSSBdogzv1/ka97eLbEv0ji27I9vgf613lEhXY16h9ZvC1wPvJzwd/usLPvQ==",
+  "salt": "VFKsScfBZQQ+KQ==",
+  "createdAt": "1641843727508",
+  "disabled": false,
+  "providerUserInfo": []
+}]}

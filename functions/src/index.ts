@@ -1,10 +1,12 @@
 import * as functions from "firebase-functions";
 import * as admin from "firebase-admin";
 import User from "./user";
+import { getCategories as GetCategories, addAd as AddAd,
+  getAd as GetAd } from "./postCategory";
 
 admin.initializeApp();
 
-export const helloWorld = functions.https.onRequest((request, response) => {
+export const helloWorld = functions.https.onRequest((_, response) => {
   functions.logger.info("Hello logs!", { structuredData: true });
   functions.logger.info("Hello 344!", { structuredData: true });
   response.send("Hello from Sombango!");
@@ -20,3 +22,8 @@ export const userRegister = functions.https.onCall((data) =>
     data.lastName
   ).register()
 );
+
+// Ad
+export const getCategories = functions.https.onCall(GetCategories);
+export const addAd = functions.https.onCall(AddAd);
+export const getAd = functions.https.onCall(GetAd);
