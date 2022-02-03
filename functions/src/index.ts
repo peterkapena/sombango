@@ -1,8 +1,12 @@
 import * as functions from "firebase-functions";
 import * as admin from "firebase-admin";
 import User from "./user";
-import { getCategories as GetCategories, addAd as AddAd,
-  getAd as GetAd } from "./postCategory";
+import {
+  getCategories as GetCategories,
+  addAd as AddAd,
+  getAd as GetAd,
+  getAds as GetAds,
+} from "./postCategory";
 
 admin.initializeApp();
 
@@ -27,3 +31,4 @@ export const userRegister = functions.https.onCall((data) =>
 export const getCategories = functions.https.onCall(GetCategories);
 export const addAd = functions.https.onCall(AddAd);
 export const getAd = functions.https.onCall(GetAd);
+export const getAds = functions.https.onCall(GetAds);

@@ -90,3 +90,14 @@ export async function getAd(id: string): Promise<unknown> {
   }
   return undefined;
 }
+export async function getAds(): Promise<unknown> {
+  try {
+    const db = admin.firestore();
+
+    const docRef = (await db.collection(AD).get()).docs;
+    return docRef.map((d) => d.id);
+  } catch (error) {
+    console.log(error);
+    throw error;
+  }
+}

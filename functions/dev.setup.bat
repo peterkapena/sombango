@@ -1,6 +1,6 @@
 
 SET cloudurl="gs://sombango-e96a7.appspot.com/backup"
-SET localpath="c:\\srce\\sombango"
+SET localpath="c:\\srce\\sombango\\functions"
 
 @REM call gsutil -m rm -r %cloudurl%
 
